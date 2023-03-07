@@ -1,9 +1,22 @@
-import MovieInfo from './movie-info.js'
+import {
+  Switch,
+  Route,
+  Link,
+  BrowserRouter,
+  Routes
+} from "react-router-dom";
+import Home from "./pages/home";
+
 function App() {
   return (
-    <>
-      <MovieInfo />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path=""></Route>
+        <Route></Route>
+        <Route></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
