@@ -1,0 +1,49 @@
+.sidebar-container {
+    display: flex;
+    align-items: flex-start;
+    // width: 230px;
+
+    i {
+        color: bisque;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .sidebar {
+        width: 200px;
+        height: 100vh;
+        background-color: transparent;
+    }
+
+    .active {
+        display: inline-block;
+    }
+
+    .inactive {
+        display: none;
+    }
+
+    @keyframes slidein {
+        from {
+            right: 200px;
+            opacity: 0;
+        }
+
+        to {
+            right: 0px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideout {
+        from {
+            right: 0px;
+            opacity: 1;
+        }
+
+        to {
+            right: 200px;
+            opacity: 0;
+        }
+    }
+}

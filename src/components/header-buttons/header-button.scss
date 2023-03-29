@@ -1,0 +1,54 @@
+.button-box {
+    display: flex;
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: apprear-top 1s ease-in;
+
+    @keyframes apprear-top {
+        0% {
+            top: -100px
+        }
+
+        100% {
+            top: 0;
+        }
+    }
+
+    button {
+        width: 100px;
+        height: 80px;
+        position: relative;
+        background: gold;
+        color: black;
+        border-radius: 0px 0px 20px 20px;
+        top: -30px;
+        cursor: pointer;
+
+        &:hover {
+            top: -10px;
+
+            span {
+                display: inline;
+            }
+
+            i {
+                top: 0;
+                scale: 1.1;
+            }
+
+            transition: .5s ease-in-out;
+        }
+
+        i {
+            position: relative;
+            top: 10px;
+            scale: 1.3;
+        }
+
+        span {
+            display: none;
+        }
+    }
+}

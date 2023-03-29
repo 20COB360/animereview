@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.logo {
+    width: 20px;
+    height: 20px;
+}
+
+.signin {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.807);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: rgb(65, 61, 61);
+    background-image: url(../../static-images/pngwinga.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 375px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border: 2px solid white;
+    box-shadow: 0vw 0vw 8px 5px white;
+}
+
+.signup-box {
+    display: none;
+}
+
+
+.login-heading h1,
+.signup-heading h1 {
+    transform: rotate(-90deg);
+    position: absolute;
+    color: blanchedalmond;
+    font-size: 65px;
+    top: 60px;
+    left: -45px;
+}
+
+.signup-heading h1 {
+    top: 80px;
+    left: -65px;
+}
+
+.contents {
+    width: 90%;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    border-radius: 50%;
+    background-color: bisque;
+    top: -12px;
+    right: -12px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close i {
+    color: red;
+    cursor: pointer;
+}
+
+.close i:hover {
+    color: black;
+}
+
+.id-pass {
+    margin: auto;
+    width: 80%;
+    height: 25px;
+    margin: 3px;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    opacity: .5;
+}
+
+.btn-box {
+    margin: 10px 0px;
+}
+
+.federated-login-box {
+    margin: 20px 0vw;
+}
+
+.federated-login {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    margin: 3px auto;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.federated-login p {
+    color: blanchedalmond;
+    width: 200px;
+    text-align: left;
+}
+
+.animation-dropdown {
+    animation: dropdown 1.25s linear;
+}
+
+@keyframes dropdown {
+    0% {
+        top: -1000px;
+    }
+
+    25% {
+        top: -550px;
+    }
+
+    60% {
+        top: 100px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+.animation-flip-half1 {
+    animation: flip1 .45s linear;
+}
+
+@keyframes flip1 {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(90deg);
+    }
+}
+
+.animation-flip-half2 {
+    animation: flip2 .45s linear;
+}
+
+@keyframes flip2 {
+    from {
+        transform: rotateY(-90deg);
+    }
+
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+.animation-leave {
+    animation: leave 1s linear;
+}
+
+@keyframes leave {
+    0% {
+        top: 0px;
+    }
+
+    100% {
+        top: -1000px;
+    }
+}

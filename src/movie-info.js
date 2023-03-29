@@ -1,4 +1,4 @@
-import CastCard from './components/char-cast-card.js';
+import CastCard from './components/cast-card/char-cast-card.jsx';
 export default function MovieInfo() {
     return (
         <>
